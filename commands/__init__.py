@@ -2,7 +2,6 @@ from vkbottle.bot import Bot
 
 
 def register_commands(bot: Bot):
-    from commands.menu import register as register_menu
     from commands.help import register as register_help
     from commands.warns import register as register_warns
     from commands.mutes import register as register_mutes
@@ -15,7 +14,6 @@ def register_commands(bot: Bot):
     from commands.stats import register as register_stats
     from commands.history_cmd import register as register_history
     
-    register_menu(bot)
     register_help(bot)
     register_warns(bot)
     register_mutes(bot)
